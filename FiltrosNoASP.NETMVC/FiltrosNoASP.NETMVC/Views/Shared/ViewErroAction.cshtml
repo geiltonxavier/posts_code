@@ -1,0 +1,13 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "View Erro Controller";
+}
+
+<h1>Erro Na Action</h1>
+<h2>Controller: @Model.ControllerName</h2>
+<h2> Action: @Model.ActionName</h2>
+
+<h1 class="text-danger">Mensagem: @Model.Exception.Message</h1>
+<h2 class="text-danger">Pilha do Erro: @Model.Exception.StackTrace</h2>
+
